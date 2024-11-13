@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: IBM Plex Mono;
+}
+
+
+.main {
+  width: 1280px;
+  max-height: 100vh;
+  overflow-y: auto;
+  background: #0e0e0e;
+}
