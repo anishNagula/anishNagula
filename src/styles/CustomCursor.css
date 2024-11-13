@@ -9,13 +9,25 @@
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  transition: transform 0.1s ease-out;
+  transition: background-color 0.3s ease;
   z-index: 1000;
 }
 
 .custom-cursor.clicked {
-  transform: translate(-50%, -50%) scale(0.9);
+  animation: scaleAnimation 0.5s forwards; /* Apply the animation */
   background-color: #9edf9c;
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: translate(-50%, -50%) scale(1); /* Start at original size */
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.5); /* Scale up to 110% */
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1); /* Scale down to 90% */
+  }
 }
 
 .custom-cursor.hovered {

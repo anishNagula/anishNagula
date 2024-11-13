@@ -3,7 +3,9 @@ import styles from '../styles/blog.module.css';
 
 const Blog = () => {
   return (
-    <div className={styles.main}></div>
+    <div className={styles.main}>
+      Working on it...🛠💪
+    </div>
   )
 }
 

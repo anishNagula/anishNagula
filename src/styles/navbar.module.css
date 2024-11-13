@@ -1,6 +1,6 @@
 .main {
   width: 100%;
-  height: 60px;
+  height: 40px;
   display: flex;
   justify-content: space-between; /* Corrected to avoid duplicate display property */
   align-items: center;
@@ -31,12 +31,12 @@
 .main_right > ul > li {
   list-style: none;
   border: 1px solid white;
-  height: 60px;
+  height: 40px;
   width: 100px;
 }
 
 .main_right > ul > li > a {
-  height: 60px;
+  height: 40px;
   text-decoration: none; /* Remove underline */
   color: white; /* Change color to white */
   display: flex; /* Use flexbox for centering */
@@ -47,4 +47,5 @@
 .activeLink {
   background-color: #9edf9c; /* Highlight background for active link */
   font-weight: bold; /* Make active link bold */
+  color: #000409 !important;
 }

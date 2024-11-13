@@ -1,17 +1,32 @@
+/* app.css*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+
 body {
-  font-family: IBM Plex Mono;
+  font-family: 'IBM Plex Mono';
+  max-width: 100%; /* Scales with viewport size */
+  overflow-x: hidden; /* Ensures no horizontal scroll bars */
 }
 
-
 .main {
-  width: 1280px;
-  max-height: 100vh;
+  max-width: 100%; /* Scales with viewport size */
+  max-height: 100vh; /* Scales with viewport height */
   overflow-y: auto;
   background: #0e0e0e;
+}
+
+button {
+  border-radius: 6px;
+  padding: 10px;
+  font-family: 'IBM Plex Mono';
+  font-weight: bold;
+}
+
+a {
+  color: rgb(112, 112, 232);
 }

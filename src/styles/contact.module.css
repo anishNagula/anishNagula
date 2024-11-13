@@ -1,0 +1,55 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  padding: 0 100px;
+  margin-top: 60px;
+  background-color: #0e0e0e;
+}
+
+.contact {
+  width: 45%;
+  padding: 20px;
+  height: auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.contact > h2 {
+  margin-top: 50px;
+  font-size: 40px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  color: #9cdf9e;
+}
+
+.button {
+  margin: 0;
+  padding: 10px 15px;
+}
+
+.connect {
+  width: 35%;
+  padding: 20px;
+  height: auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.connect > h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+  text-decoration: underline;
+}
+
+.connect > ul > li {
+  list-style: none;
+  width: 300px;
+  border: 1.5px solid #f6f4f1;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 50px;
+}
