@@ -9,13 +9,13 @@
 
 body {
   font-family: 'IBM Plex Mono';
-  max-width: 100%; /* Scales with viewport size */
-  overflow-x: hidden; /* Ensures no horizontal scroll bars */
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .main {
-  max-width: 100%; /* Scales with viewport size */
-  max-height: 100vh; /* Scales with viewport height */
+  max-width: 100%;
+  max-height: 100vh;
   overflow-y: auto;
   background: #0e0e0e;
 }

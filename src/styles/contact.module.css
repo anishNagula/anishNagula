@@ -1,23 +1,27 @@
 .main {
   width: 100%;
-  height: 100vh;
-  padding: 0 100px;
+  height: auto;
+  padding: 20px;
   margin-top: 60px;
   background-color: #0e0e0e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact {
-  width: 45%;
+  width: 100%;
+  max-width: 600px;
   padding: 20px;
-  height: auto;
   display: flex;
+  flex-direction: column;
   text-align: center;
   align-items: center;
 }
 
 .contact > h2 {
   margin-top: 50px;
-  font-size: 40px;
+  font-size: 2.5rem;
   margin-bottom: 10px;
   text-decoration: underline;
   color: #9cdf9e;
@@ -29,27 +33,66 @@
 }
 
 .connect {
-  width: 35%;
+  width: 100%;
+  max-width: 600px;
   padding: 20px;
-  height: auto;
   display: flex;
+  flex-direction: column;
   text-align: center;
   align-items: center;
 }
 
 .connect > h2 {
-  font-size: 30px;
+  font-size: 2rem;
   margin-bottom: 40px;
   text-decoration: underline;
 }
 
+.connect > ul {
+  padding: 0;
+  margin: 0;
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .connect > ul > li {
   list-style: none;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   border: 1.5px solid #f6f4f1;
   padding: 10px;
   margin-bottom: 20px;
   border-radius: 6px;
   cursor: pointer;
   height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .contact > h2 {
+    font-size: 2rem;
+  }
+
+  .connect > h2 {
+    font-size: 1.5rem;
+  }
+
+  .connect > ul > li {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact > h2 {
+    font-size: 1.5rem;
+  }
+
+  .connect > h2 {
+    font-size: 1.2rem;
+  }
 }

@@ -1,8 +1,8 @@
 .main {
   width: 100%;
-  height: 40px;
+  height: 60px;
   display: flex;
-  justify-content: space-between; /* Corrected to avoid duplicate display property */
+  justify-content: space-between;
   align-items: center;
   background-color: #0e0e0e;
   position: fixed;
@@ -18,34 +18,88 @@
 
 .main_right {
   display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.menuToggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 15px;
+  margin-top: 20px;
+}
+
+.menuToggle:hover {
+  border:none;
 }
 
 .main_right > ul {
   display: flex;
   text-align: center;
   align-items: center;
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
+  padding: 0;
+  margin: 0;
+  height: 100%;
 }
 
 .main_right > ul > li {
   list-style: none;
   border: 1px solid white;
-  height: 40px;
+  height: 100%;
   width: 100px;
 }
 
 .main_right > ul > li > a {
-  height: 40px;
-  text-decoration: none; /* Remove underline */
-  color: white; /* Change color to white */
-  display: flex; /* Use flexbox for centering */
-  align-items: center; /* Center items vertically */
-  justify-content: center; /* Center items horizontally */
-  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
 }
+
 .activeLink {
-  background-color: #9edf9c; /* Highlight background for active link */
-  font-weight: bold; /* Make active link bold */
+  background-color: #9edf9c;
+  font-weight: bold;
   color: #000409 !important;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .menuToggle {
+    display: block
+  }
+
+  .main_right > ul {
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #0e0e0e;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #f6f4f1;
+  }
+
+  .main_right > ul.active {
+    display: flex;
+    height: auto;
+  }
+
+  .main_right > ul > li {
+    width: 100%;
+    border: none;
+    height: 50px;
+  }
+
+  .main_right > ul > li > a {
+    justify-content: flex-start;
+    padding: 0 20px;
+  }
 }

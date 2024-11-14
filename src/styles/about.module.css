@@ -13,58 +13,44 @@ body {
 }
 
 .main > h1 {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 .main > p {
   color: #f6f4f1;
-  font-size: 18px;
+  font-size: 1.125rem;
   margin-top: 50px;
   margin-bottom: 15px;
 }
 
 button {
   background-color: #9edf9c;
-  border-top: 2px transparent;
-  border-left: 2px transparent;
-  border-bottom: 2px solid white;
-  border-right: 2px solid white;
+  border: 2px solid white;
   color: #000;
   margin-top: 75px;
   margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 button:hover {
-  border-top: 2px transparent;
-  border-left: 2px transparent;
-  border-bottom: 2px solid white;
-  border-right: 2px solid white;
+  border-color: #9edf9c;
 }
 
 .projects {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
-  align-items: center;
-}
-
-.projects > h3 {
-  margin-left: 30px;
-  border: 2px solid #f6f4f1;
-  padding: 5px 8px;
-  border-radius: 50%;
-}
-
-.projects > h3:hover {
-  background-color: rgb(221, 58, 58);
-  color: #000;
-  border: black;
+  align-items: flex-start;
 }
 
 .projectCard {
   border: 1.5px solid white;
-  width: 350px;
+  width: calc(33% - 10px);
   padding: 20px;
   height: 300px;
+  box-sizing: border-box;
 }
 
 .projectCard > a {
@@ -76,14 +62,10 @@ button:hover {
 }
 
 .projectCard_title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
-  text-decoration: 2px underline #9edf9c;
+  text-decoration: underline;
   margin-bottom: 10px;
-}
-
-.home-main-feed::-webkit-scrollbar-thumb:hover {
-  background-color: hsla(0, 0%, 100%, 0.75);
 }
 
 .main > h2 {
@@ -94,6 +76,7 @@ button:hover {
 
 .skills_main {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -113,24 +96,48 @@ button:hover {
   background-color: rgb(221, 58, 58);
 }
 
-::-webkit-scrollbar {
-  width: 0.5em;
-  display: block;
+.facts_main {
+  margin-top: 20px;
 }
 
-::-webkit-scrollbar-track {
-  background-color: black;
-  border-radius: 100vw;
-  margin-block: 0.2em;
+.facts_main ul {
+  padding: 0;
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: hsla(0, 0%, 100%, 0.85);
-  border: 0.15em solid black;
-  border-radius: 100vw;
-  margin-block: 0.2em;
+.facts_main li {
+  margin-bottom: 10px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background-color: hsla(0, 0%, 100%, 0.75);
+/* Responsive Styles */
+@media (max-width: 970px) {
+  .main > h1 {
+    font-size: 2rem;
+  }
+
+  .main > p {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .projectCard {
+    width: calc(100% - 10px);
+  }
+
+  .projects {
+    flex-direction: column;
+  }
+
+  .skills_main {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 769px) {
+  .projectCard {
+    width: calc(33% - 10px);
+  }
 }
