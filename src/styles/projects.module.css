@@ -3,13 +3,13 @@
   height: auto;
   margin-top: 60px;
   background-color: #0e0e0e;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 
 .projects_main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  gap: 20px;
   padding-top: 40px;
   margin-bottom: 50px;
 }
