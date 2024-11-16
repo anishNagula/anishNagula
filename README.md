@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 I’m currently working on a music based social media app<br>🌱 In the process of learning React, MongoDB and frameworks<br>⚡ Fun fact: I play the guitar and dream to be in a rock and roll band
+🔭 I’m currently working on a Formula One enthusiasist's all in one information website<br>🌱 In the process of learning React, MongoDB and frameworks<br>⚡ Fun fact: I play the guitar and dream to be in a rock and roll band
 
 
 # 💻 Tech Stack:
