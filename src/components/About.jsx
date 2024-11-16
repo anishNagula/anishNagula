@@ -5,7 +5,7 @@ import ProjectCard from '../components/ProjectCard.jsx';
 const About = () => {
   return (
     <div className={styles.main}>
-      <p>Hello everyone 👋, I'm Anish Nagula</p>
+      <p>Hello everyone<span className={styles.wiggle}>👋</span>, I'm Anish Nagula</p>
       <h1>Full-Stack Web Developer;</h1>
       <h1>Coding Enthusiast.</h1>
 

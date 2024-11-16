@@ -109,6 +109,18 @@ button:hover {
   margin-bottom: 10px;
 }
 
+/* about.module.css */
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(-10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.wiggle {
+  display: inline-block; /* Ensure the emoji is treated as an inline block */
+  animation: wiggle 0.5s infinite; /* Adjust duration and iteration as needed */
+}
+
 /* Responsive Styles */
 @media (max-width: 970px) {
   .main > h1 {
