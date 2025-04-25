@@ -1,9 +1,9 @@
 ## Hey, I'm Anish (aka an1) 👋
 
-BTech CS @ PES | Computer Science undergrad exploring the intersection of AI, systems, and the web.
+BTech CS @ PES · Exploring system architecture, AI and the web
 
-I'm interested in how things work under the hood — from operating systems and compilers to LLMs and protocols. I enjoy working with lower-level languages like C and Rust, but also build with Python, JavaScript, and Go when it makes sense.
+Curious about what runs under the hood, from OSes and compilers to LLMs and internet protocols. Mostly code in C and Rust, but I use Python, Go, and JS when speed matters.
 
-Currently focused on secure communication, self-sovereign identity, and practical uses of AI beyond chat.
+Currently focused on building projects around secure communication, self-sovereign identity, and practical uses of AI beyond chat that actually solves real problems.
 
 📎 [anishnagula.me](https://anishnagula.me)
