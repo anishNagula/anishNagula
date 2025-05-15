@@ -1,4 +1,4 @@
-## Hey, I'm Anish (aka an1) 👋
+## Hey, I'm Anish 👋
 
 BTech CS @ PES · Exploring system architecture, AI and web development
 
