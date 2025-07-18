@@ -1,9 +1,7 @@
-## Hey, I'm Anish 👋
+## Anish - BTech CS @ PES
 
-BTech CS @ PES · Exploring system architecture, AI and web development
+Into operating systems, compilers, and system architecture and the web.
 
-Curious about what runs under the hood, from OSes and compilers to LLMs and internet protocols. I mostly code in C and Rust, but also use Python, Go, and JS when speed matters.
-
-Currently focused on building projects around secure communication, self-sovereign identity, and practical uses of AI beyond chat that actually solves real problems.
+C & Rust, some Python, Go, and JS.
 
 🔗 [anishnagula.me](https://anishnagula.me)
